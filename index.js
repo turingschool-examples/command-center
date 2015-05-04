@@ -80,7 +80,11 @@ app.get('/api/topics/:topic', function (req, res) {
     return respondToInvalidTopic(res, topic, legitTopics);
   }
 
-  res.send({ status: 'ok', topic: topic, tweets: topics[topic] });
+  const limit = req.params.limit || 5;
+  res.send({ status: 'ok',
+             topic: topic,
+             tweets: trimTopics(topics, limit)[topic]
+           });
 });
 
 const port = process.env.PORT || 3000;
