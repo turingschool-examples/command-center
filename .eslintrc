@@ -1,0 +1,20 @@
+{
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "quotes": [1, "single"],
+    "no-console": false,
+    "no-use-before-define": false,
+    "camelcase": true,
+    "strict": false,
+    "new-cap": true
+  },
+  "ecmaFeatures": {
+    "templateStrings": true,
+    "no-var": true
+  },
+  "globals": {
+    "console": true
+  }
+}
