@@ -19,6 +19,7 @@
   "homepage": "https://github.com/turingschool-examples/command-center",
   "dependencies": {
     "express": "^4.12.3",
+    "express-cors": "0.0.3",
     "node-tweet-stream": "^1.8.1"
   },
   "devDependencies": {

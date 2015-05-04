@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 const http = require('http').Server(app);
 
+const cors = require('express-cors');
+app.use(cors({ allowedOrigins: ['*'] }));
+
 const Twitter = require('node-tweet-stream');
 
 const respondToInvalidTopic = require('./lib/respond-to-invalid-topic');
