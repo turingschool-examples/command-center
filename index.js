@@ -20,12 +20,12 @@ var t = new Twitter({
 });
 
 var topics = {
+  'bieber': [],
+  'tswift': [],
   'javascript': [],
-  'python': [],
-  'clojure': [],
-  'ruby': [],
-  'perl': [],
-  'c++': []
+  'pokemon': [],
+  'denver': [],
+  'rails': []
 };
 
 const legitTopics =  Object.keys(topics);
