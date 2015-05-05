@@ -21,7 +21,7 @@ var t = new Twitter({
 
 var topics = {
   'bieber': [],
-  'tswift': [],
+  'swift': [],
   'javascript': [],
   'pokemon': [],
   'denver': [],
